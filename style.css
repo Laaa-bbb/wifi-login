@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif; 
+}
+
+.background {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/public/images/web_bg.png");
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A4798;
+    color: white;
+    height: 10%;
+    width: 20%;
+    border-radius: 4vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #325699;
+}
+
+.button h3 {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 800px) {
+    .button {
+        background-color: pink;
+    }
+
+    .image {
+        background-image: url("/public/images/mobile_bg.png");
+    }
+}
