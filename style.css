@@ -28,9 +28,9 @@ body {
     justify-content: center;
     background-color: #1A4798;
     color: white;
-    height: 10%;
-    width: 20%;
-    border-radius: 4vw;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 5rem;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -43,13 +43,18 @@ body {
 }
 
 .button h3 {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 800px) {
     .button {
-        background-color: pink;
+        height: 3rem;
+        width: 10rem;;
     }
+
+    /* .button h3 {
+        font-size: 10rem;
+    } */
 
     .image {
         background-image: url("/public/images/mobile_bg.png");
