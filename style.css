@@ -19,7 +19,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("public/images/web_bg.png");
-
 }
 
 .button {
@@ -28,11 +27,11 @@ body {
     justify-content: center;
     background-color: #1A4798;
     color: white;
-    height: 5rem;
-    width: 20rem;
+    height: 5%;
+    width: 40%;
     border-radius: 5rem;
     position: absolute;
-    top: 60%;
+    top: 58vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -49,7 +48,7 @@ body {
 @media screen and (max-width: 800px) {
     .button {
         height: 3rem;
-        width: 10rem;;
+        width: 80%;
     }
 
     /* .button h3 {
@@ -58,5 +57,6 @@ body {
 
     .image {
         background-image: url("public/images/mobile_bg.png");
+        background-size: cover;
     }
 }
