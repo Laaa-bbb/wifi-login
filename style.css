@@ -49,14 +49,17 @@ body {
     .button {
         height: 3rem;
         width: 80%;
+        top: 58vh;
     }
-
-    /* .button h3 {
-        font-size: 10rem;
-    } */
 
     .image {
         background-image: url("public/images/mobile_bg.png");
         background-size: cover;
+    }
+}
+
+@media screen and (max-height: 360px) {
+    .button {
+        top: 70vh;
     }
 }
