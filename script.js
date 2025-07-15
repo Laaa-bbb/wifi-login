@@ -3,10 +3,10 @@ const mediaQuery = window.matchMedia("(max-width: 810px)");
 
 const updateImage = (e) => {
     if (e.matches) {
-        img.src = "public/images/mobile_blank.png"
+        img.style.backgroundImage = "url('public/images/mobile_blank.png')"
     }
     else {
-        img.src = "public/images/web_blank.png"
+        img.style.backgroundImage = "url('public/images/web_blank.png')"
     }
 }
 

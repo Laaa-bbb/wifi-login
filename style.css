@@ -7,18 +7,46 @@ body {
     font-family: sans-serif; 
 }
 
-.background {
-    height: 100vh;
-    overflow: hidden;
+.content {
+    text-align: center;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.8;
+    position: absolute;
+    top: 35vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .image {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
     background-position: center;
-    /* background-image: url("public/images/web_bg.png"); */
+    background-image: url("public/images/web_bg.png");
+}
+
+.league-spartan-content {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.header {
+    font-size: 20vh;
+    color: #dd1f26;
+}
+
+.sub-header {
+    color: #1A4798;
+    font-size: 5vh;
+    border-bottom: 10px solid #F4C027;
+    margin-top: 10px;
 }
 
 .button {
@@ -27,13 +55,10 @@ body {
     justify-content: center;
     background-color: #1A4798;
     color: white;
-    height: 5%;
-    width: 40%;
+    width: 80%;
     border-radius: 5rem;
-    position: absolute;
-    top: 58vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 10px 0px 10px 0px;
+    margin-top: 50px;
 }
 
 .button:hover {
@@ -42,20 +67,29 @@ body {
 }
 
 .button h3 {
-    font-size: 1.5rem;
+    font-size: 3vh;
 }
 
 @media screen and (max-width: 800px) {
+    .content {
+        max-width: 100%;
+        width: 100vw;
+        top: 45vh;
+    }
+
     .button {
         height: 3rem;
         width: 80%;
         top: 58vh;
     }
-/* 
-    .image {
-        background-image: url("public/images/mobile_bg.png");
-        background-size: cover;
-    } */
+
+    .header {
+        font-size: 100px;
+    }
+
+    .sub-header {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-height: 360px) {
